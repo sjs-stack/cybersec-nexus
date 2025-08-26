@@ -15,9 +15,9 @@ export default function HeroSection() {
                     <TypeAnimation
                         sequence={[
                             'Cybersecurity',
-                            2000,
+                            2500,
                             'Education',
-                            2000,
+                            2500,
                         ]}
                         wrapper="span"
                         speed={30} // <-- CHANGED: Slower typing speed

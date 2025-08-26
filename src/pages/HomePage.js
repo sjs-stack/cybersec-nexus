@@ -1,4 +1,4 @@
-// FILE: src/pages/HomePage.js (Corrected Version)
+// FILE: src/pages/HomePage.js (Updated with local images)
 
 import React, { useState } from 'react';
 import Header from '../components/Header';
@@ -7,27 +7,32 @@ import LiveClassCard from '../components/LiveClassCard';
 import Footer from '../components/Footer';
 import SignUpModal from '../components/SignUpModal';
 
-// Using online placeholders instead of local files
+// 1. Import your professional images from the assets folder
+import beginnerImg from '../assets/beginner.png';      // Make sure this filename is correct
+import intermediateImg from '../assets/intermediate.png';// Make sure this filename is correct
+import advancedImg from '../assets/advanced.png';      // Make sure this filename is correct
+
+// 2. Update this array to use the imported image variables
 const liveClassesData = [
     { 
         title: 'Intro to Network Pentesting', 
         description: 'A live, interactive session covering the basics of network penetration testing. Perfect for beginners.', 
         level: 'Beginner', 
-        image: 'https://placehold.co/600x400/22c55e/FFFFFF?text=Beginner', 
+        image: beginnerImg, 
         link: '/register/beginner' 
     },
     { 
         title: 'Advanced Web App Exploitation', 
         description: 'A deep dive into common web vulnerabilities like SQLi, XSS, and CSRF.', 
         level: 'Intermediate', 
-        image: 'https://placehold.co/600x400/3b82f6/FFFFFF?text=Intermediate', 
+        image: intermediateImg, 
         link: '/register/intermediate' 
     },
     { 
         title: 'Malware Analysis Fundamentals', 
         description: 'Learn how to safely analyze, reverse-engineer, and understand malicious software.', 
         level: 'Advanced', 
-        image: 'https://placehold.co/600x400/8b5cf6/FFFFFF?text=Advanced', 
+        image: advancedImg, 
         link: '/register/advanced' 
     }
 ];
