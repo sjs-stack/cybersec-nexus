@@ -11,6 +11,7 @@ const IntermediateRegistration = lazy(() => import('./pages/IntermediateRegistra
 const AdvancedRegistration = lazy(() => import('./pages/AdvancedRegistration'));
 const TutorialsPage = lazy(() => import('./pages/TutorialsPage'));
 const ToolsPage = lazy(() => import('./pages/ToolsPage'));
+const HolographicDemo = lazy(() => import('./pages/HolographicDemo'));
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           {/* Page Routes */}
           <Route path="/tutorials" element={<TutorialsPage />} />
           <Route path="/tools" element={<ToolsPage />} />
+          <Route path="/holographic" element={<HolographicDemo />} />
           
           {/* Registration Routes */}
           <Route path="/register/beginner" element={<BeginnerRegistration />} />

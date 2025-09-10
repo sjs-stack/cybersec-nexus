@@ -29,6 +29,7 @@ export default function Header({ onGetStartedClick }) {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/tutorials">Tutorials</NavLink>
             <NavLink to="/tools">Tools</NavLink>
+            <NavLink to="/holographic">3D Demo</NavLink>
           </div>
 
           <div className="hidden md:block">
@@ -49,6 +50,7 @@ export default function Header({ onGetStartedClick }) {
             <Link to="/" className="block text-gray-300 hover:text-white py-2">Home</Link>
             <Link to="/tutorials" className="block text-gray-300 hover:text-white py-2">Tutorials</Link>
             <Link to="/tools" className="block text-gray-300 hover:text-white py-2">Tools</Link>
+            <Link to="/holographic" className="block text-gray-300 hover:text-white py-2">3D Demo</Link>
           </div>
         )}
       </nav>
