@@ -312,5 +312,3 @@ export default function HolographicScene() {
     </div>
   );
 }
-
-export default HolographicScene
